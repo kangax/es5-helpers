@@ -4,6 +4,10 @@ Object.defineProperty(Object.prototype, '__class__', {
   } 
 });
 
+/*
+
+// or slightly beefed up version
+ 
 Object.defineProperty(Object.prototype, '__class__', { 
   get: (function(toString) { 
     return function() {
@@ -11,3 +15,5 @@ Object.defineProperty(Object.prototype, '__class__', {
     };
   })({}.toString)
 });
+
+*/
